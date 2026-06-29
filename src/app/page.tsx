@@ -59,7 +59,7 @@ const Loader = ({ onComplete }: { onComplete: () => void }) => {
               {progress}%
             </div>
             <div className="text-orange-500 uppercase tracking-[0.5em] text-sm font-bold mt-4 glitch-text" data-text="Loading Experience">
-              Loading Experience
+              Loading Experience...
             </div>
           </motion.div>
         ) : (
@@ -446,7 +446,7 @@ export default function Portfolio() {
               <a href="#about" className="shine-card px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                 Get in Touch <ChevronRight size={18} />
               </a>
-              <a href="/Resume.pdf" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
+              <a href="https://drive.google.com/file/d/1xLzvfMcVM8kaN5xeGLhDV6ipkmJ7LK3E/view?usp=drivesdk" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Download size={18} /> Download CV
               </a>
             </div>
