@@ -131,7 +131,7 @@ const CustomCursor = () => {
           x: mousePosition.x - 24,
           y: mousePosition.y - 24,
           scale: isHovering ? 2.5 : 1,
-          backgroundColor: isHovering ? "rgba(255, 140, 0, 0.1)" : "transparent",
+          backgroundColor: isHovering ? "rgba(255, 140, 0, 0.1)" : "rgba(255, 140, 0, 0)",
         }}
         transition={{ type: "spring", stiffness: 400, damping: 30, mass: 0.5 }}
       >
@@ -446,7 +446,7 @@ export default function Portfolio() {
               <a href="#about" className="shine-card px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                 Get in Touch <ChevronRight size={18} />
               </a>
-              <a href="https://drive.google.com/file/d/1xLzvfMcVM8kaN5xeGLhDV6ipkmJ7LK3E/view?usp=drivesdk" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
+              <a href="https://drive.google.com/file/d/1MSHEq01CWZeACuydcDNZu6E6RxzgCBhC/view" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Download size={18} /> Download CV
               </a>
             </div>
