@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion";
-import { Download, Mail, Code, Globe, Briefcase, GraduationCap, MapPin, ChevronRight, Star, Layers, Terminal, Award } from "lucide-react";
+import { Download, Mail, Code, Briefcase, GraduationCap, ChevronRight, Star, Layers, Terminal, Award } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
 
@@ -417,7 +417,7 @@ export default function Portfolio() {
                   transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                   className="block"
                 >
-                  Hi, I'm
+                  Hi, I&apos;m
                 </motion.span>
               </span>
               <span className="block overflow-hidden pb-4">
@@ -703,9 +703,11 @@ export default function Portfolio() {
               {[
                 { title: "Full Stack Development MasterClass", org: "NoviTech R&D Private Limited", url: "https://drive.google.com/file/d/1w2sJHmrugnmppcFcaaG40IbKPcYgUvu4/view?usp=drivesdk" },
                 { title: "Front-End Web Development", org: "Reliance Foundation Skilling Academy", url: "https://drive.google.com/file/d/16KlWqftyb12hJGrJIkqgknymlef0MudC/view?usp=drivesdk" },
+                { title: "Web Development Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1t3pWE0wiEO-ku-T0RsPXLowHigGFosfA/view?usp=drivesdk" },
                 { title: "Introduction to Front-End Development", org: "SkillUp by Simplilearn", url: "https://drive.google.com/file/d/13JDOgFXC41p0KUMZxKM_4tuWOn9pGbyQ/view?usp=drivesdk" },
                 { title: "HTML Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1fyaoemen4-SsJ_MU6VKR8I7ugGVJk_Sz/view?usp=drivesdk" },
-                { title: "CSS3 Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1shXdOqBa3Ptvtgo20CY_rNOz63_J4P0e/view?usp=drivesdk" }
+                { title: "CSS3 Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1shXdOqBa3Ptvtgo20CY_rNOz63_J4P0e/view?usp=drivesdk" },
+                { title: "JavaScript Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1F10Wb-lnJHn5etNcEFmAIbfZXCOT1v1B/view?usp=drivesdk" }
               ].map((cert, index) => (
                 <motion.a
                   href={cert.url}
