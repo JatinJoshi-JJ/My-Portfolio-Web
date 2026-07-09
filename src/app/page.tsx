@@ -446,7 +446,7 @@ export default function Portfolio() {
               <a href="#about" className="shine-card px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                 Get in Touch <ChevronRight size={18} />
               </a>
-              <a href="https://drive.google.com/file/d/1MSHEq01CWZeACuydcDNZu6E6RxzgCBhC/view" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
+              <a href="https://drive.google.com/file/d/1uG4IXQt27WVRbPp9hnZMNLzt5WOI1KBc/view?usp=drivesdk" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Download size={18} /> Download CV
               </a>
             </div>
@@ -552,11 +552,11 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="glass-card shine-card p-8 border-t-4 border-t-orange-500"
+              className="glass-card shine-card p-8 border-t-4 border-t-orange-500 flex flex-col h-full"
             >
-              <h3 className="text-xl font-bold mb-2">BBA (Computer Applications)</h3>
-              <p className="text-orange-400 font-medium mb-4">Synergy School of Commerce, Pune • 2023 - 2026</p>
-              <p className="text-gray-400 text-sm leading-relaxed">Pursuing degree in Computer Applications, focusing on advanced software development and computer science.</p>
+              <h3 className="text-xl font-bold mb-2">SSC</h3>
+              <p className="text-orange-400 font-medium mb-6 flex-grow">Aruna Chaudhary Madhyamic Vidyalaya, Pune <br />• 2020 - 2021</p>
+              <p className="text-gray-400 text-sm leading-relaxed">85.60% — Class Topper</p>
             </motion.div>
 
             <motion.div
@@ -564,11 +564,11 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="glass-card shine-card p-8 border-t-4 border-t-pink-500"
+              className="glass-card shine-card p-8 border-t-4 border-t-pink-500 flex flex-col h-full"
             >
               <h3 className="text-xl font-bold mb-2">HSC (Commerce)</h3>
-              <p className="text-pink-400 font-medium mb-4">Prestige Public School, Pune • 2023</p>
-              <p className="text-gray-400 text-sm leading-relaxed">Graduated with 87.50% — Class Topper.</p>
+              <p className="text-pink-400 font-medium mb-6 flex-grow">Prestige Public School, Pune <br />• 2021 - 2023</p>
+              <p className="text-gray-400 text-sm leading-relaxed">87.50% — Class Topper</p>
             </motion.div>
 
             <motion.div
@@ -576,11 +576,11 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="glass-card shine-card p-8 border-t-4 border-t-purple-500"
+              className="glass-card shine-card p-8 border-t-4 border-t-purple-500 flex flex-col h-full"
             >
-              <h3 className="text-xl font-bold mb-2">SSC</h3>
-              <p className="text-purple-400 font-medium mb-4">Aruna Chaudhary Madhyamic Vidyalaya • 2021</p>
-              <p className="text-gray-400 text-sm leading-relaxed">Graduated with 85.60% — Class Topper.</p>
+              <h3 className="text-xl font-bold mb-2">BBA (Computer Applications)</h3>
+              <p className="text-purple-400 font-medium mb-6 flex-grow">Choice College of Arts and Commerce / Synergy School of Commerce, Pune <br />• 2023 - 2026</p>
+              <p className="text-gray-400 text-sm leading-relaxed">CGPA 7.80/10 ( 74%) (Grade A)</p>
             </motion.div>
           </div>
         </section>
