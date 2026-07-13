@@ -502,7 +502,7 @@ export default function Portfolio() {
                 <div className="shrink-0 w-12 h-12 rounded-full glass-card flex items-center justify-center group-hover:border-pink-500/50 transition-colors">
                   <Briefcase size={20} />
                 </div>
-                <span className="font-medium">+91-9119586969</span>
+                <span className="font-medium">+91-9119586960</span>
               </div>
               <a href="https://github.com/JatinJoshi-JJ" target="_blank" className="flex items-center gap-4 text-gray-400 hover:text-white group transition-colors">
                 <div className="shrink-0 w-12 h-12 rounded-full glass-card flex items-center justify-center group-hover:border-white/50 transition-colors">
