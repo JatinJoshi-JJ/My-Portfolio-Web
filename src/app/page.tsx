@@ -580,7 +580,7 @@ export default function Portfolio() {
             >
               <h3 className="text-xl font-bold mb-2">BBA (Computer Applications)</h3>
               <p className="text-purple-400 font-medium mb-6 flex-grow">Choice College of Arts and Commerce / Synergy School of Commerce, Pune <br />• 2023 - 2026</p>
-              <p className="text-gray-400 text-sm leading-relaxed">CGPA 7.80/10 ( 74%) (Grade A)</p>
+              <p className="text-gray-400 text-sm leading-relaxed">CGPA 7.80/10 (Grade A)</p>
             </motion.div>
           </div>
         </section>
