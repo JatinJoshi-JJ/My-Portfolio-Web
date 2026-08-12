@@ -446,7 +446,7 @@ export default function Portfolio() {
               <a href="#about" className="shine-card px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                 Get in Touch <ChevronRight size={18} />
               </a>
-              <a href="https://drive.google.com/file/d/14lhSveik1ODtTS0DRNDE3WpnGsQPfkfR/view?usp=drivesdk" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
+              <a href="https://drive.google.com/file/d/1-kzsMmCwZ3KIXHNgPGz32fXm-TGE_SZ2/view?usp=drive_link" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Download size={18} /> Download CV
               </a>
             </div>
