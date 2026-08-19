@@ -708,7 +708,7 @@ export default function Portfolio() {
                 { title: "HTML Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1fyaoemen4-SsJ_MU6VKR8I7ugGVJk_Sz/view?usp=drivesdk" },
                 { title: "CSS3 Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1shXdOqBa3Ptvtgo20CY_rNOz63_J4P0e/view?usp=drivesdk" },
                 { title: "JavaScript Course", org: "STP Computer Education", url: "https://drive.google.com/file/d/1F10Wb-lnJHn5etNcEFmAIbfZXCOT1v1B/view?usp=drivesdk" },
-      { title: "Be10X Course", org: "AI Tools Workshop Certificate", url: "https://drive.google.com/file/d/1ZWiJ3GU0fyF54m9lEehBzg72cA71Sphw/view?usp=drive_link" }
+                { title: "AI Tools Workshop", org: "Be10X", url: "https://drive.google.com/file/d/1ZWiJ3GU0fyF54m9lEehBzg72cA71Sphw/view?usp=sharing" }
               ].map((cert, index) => (
                 <motion.a
                   href={cert.url}
