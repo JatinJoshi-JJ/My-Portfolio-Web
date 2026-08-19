@@ -446,7 +446,7 @@ export default function Portfolio() {
               <a href="#about" className="shine-card px-8 py-3.5 bg-white text-black font-semibold rounded-full hover:scale-105 transition-transform flex items-center gap-2">
                 Get in Touch <ChevronRight size={18} />
               </a>
-              <a href="https://drive.google.com/file/d/1-kzsMmCwZ3KIXHNgPGz32fXm-TGE_SZ2/view?usp=drive_link" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
+              <a href="https://drive.google.com/file/d/1wG3xhri92d-Jv3M9abrdH2kIeEAkJNfh/view?usp=sharing" target="_blank" className="shine-card px-8 py-3.5 glass-card font-semibold rounded-full hover:bg-white/10 transition-colors flex items-center gap-2">
                 <Download size={18} /> Download CV
               </a>
             </div>
@@ -580,7 +580,7 @@ export default function Portfolio() {
             >
               <h3 className="text-xl font-bold mb-2">BBA (Computer Applications)</h3>
               <p className="text-purple-400 font-medium mb-6 flex-grow">Choice College of Arts and Commerce / Synergy School of Commerce, Pune <br />• 2023 - 2026</p>
-              <p className="text-gray-400 text-sm leading-relaxed">CGPA 7.80/10 — (Grade A)</p>
+              <p className="text-gray-400 text-sm leading-relaxed">CGPA 7.80/10 — Grade A</p>
             </motion.div>
           </div>
         </section>
