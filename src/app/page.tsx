@@ -301,6 +301,7 @@ const Hero3DElement = () => {
 
 export default function Portfolio() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef });
 
@@ -349,7 +350,7 @@ export default function Portfolio() {
       {/* 3D Continuous Moving Orb */}
       <div className="orb-3d w-48 h-48 sm:w-64 sm:h-64 top-[20%] left-[10%]"></div>
 
-      {/* Navbar */}
+{/* Navbar */}
       <nav className="fixed top-0 w-full z-50 glass-card rounded-none border-t-0 border-l-0 border-r-0 border-b border-white/10">
         {/* Scroll Progress Background */}
         <motion.div
@@ -364,6 +365,8 @@ export default function Portfolio() {
           >
             Portfolio<span className="text-purple-500">.</span>
           </motion.div>
+
+          {/* Desktop Navigation Links */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -374,7 +377,83 @@ export default function Portfolio() {
             <a href="#education" className="hover:text-white transition-colors">Education</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
           </motion.div>
+
+          {/* Mobile Hamburger Button */}
+          <div className="flex md:hidden items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-gray-300 hover:text-white focus:outline-none"
+              aria-label="Toggle Menu"
+            >
+              <svg
+                className="w-6 h-6 transition-transform duration-300 ease-in-out"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Dropdown Panel with Smooth Motion */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              className="md:hidden overflow-hidden border-t border-white/10 bg-black/80 backdrop-blur-xl"
+            >
+              <div className="flex flex-col gap-4 px-6 py-5 text-sm font-medium text-gray-300">
+                <a
+                  href="#about"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="hover:text-purple-400 transition-colors py-1"
+                >
+                  About
+                </a>
+                <a
+                  href="#skills"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="hover:text-purple-400 transition-colors py-1"
+                >
+                  Skills
+                </a>
+                <a
+                  href="#education"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="hover:text-purple-400 transition-colors py-1"
+                >
+                  Education
+                </a>
+                <a
+                  href="#projects"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="hover:text-purple-400 transition-colors py-1"
+                >
+                  Projects
+                </a>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 space-y-32">
